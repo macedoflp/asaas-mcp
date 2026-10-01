@@ -1,0 +1,60 @@
+{
+  "name": "asaas-mcp",
+  "version": "1.0.0",
+  "description": "MCP server para integração com Asaas API v3 — Pix, Boletos, Cartão de Crédito, Assinaturas, Subcontas e Split de Pagamentos",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "asaas-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "mcpName": "io.github.macedoflp/asaas-mcp",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "antigravity",
+    "claude",
+    "ai",
+    "asaas",
+    "brazil-api",
+    "payments",
+    "pix",
+    "split",
+    "typescript",
+    "api"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macedoflp/asaas-mcp.git"
+  },
+  "homepage": "https://github.com/macedoflp/asaas-mcp#readme",
+  "author": "Felipe Macedo (https://github.com/macedoflp)"
+}
